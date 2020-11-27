@@ -5,6 +5,11 @@
     background-color: #252b4d;
 }
 
+a{
+    text-decoration: none;
+    color:  #f4f9ff;
+}
+
 /* BOTON */
 
 .btn{
@@ -65,23 +70,71 @@
 }
 
 /* MENU HORIZONTAL */
+.menu{
+    display: flex;
+}
 
-.menu, .menu>ul>li {
+.menu ul{
     display: flex;
     list-style: none;
     font-family: 'Quicksand', sans-serif;
+    color: #f4f9ff;
     font-size: 1.2em;
-    justify-content: center;
-    align-items: center;
-    color: #b6bcdc;
+    padding:0px;
 }
 
 .hor ul{
-    display: inherit;
-    flex-direction: row;
-    margin: 0px 5%;
+    justify-content: center;
 }
 
-.hor ul>li{
-    margin: 0% 5%;
+.hor li{
+    padding: 10px;
+    margin: auto;
+}
+
+/* MENU VERTICAL */
+
+.ver, .ver ul{
+    flex-direction: column;
+}
+
+.ver ul{
+    margin: 40px 20px;
+}
+
+.ver li{
+    padding: 10px;
+    margin: auto;
+}
+
+.ver button{
+    margin: 0px;
+}
+
+/* PAGINADOR */
+
+.pager{
+    background-color: #252b4d;
+    width: 15%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.pager ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f4f9ff;
+    height: 50px;
+    padding: 0px;
+}
+
+.pager li{
+    list-style: none;
+}
+
+.pager .selected{
+    background-color:#8442b1;
+    padding: 10px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    box-shadow: inset 1px 1px 16px #111322;
 }
