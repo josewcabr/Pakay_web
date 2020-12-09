@@ -8,6 +8,7 @@
     --pan-bgn-color : #2c3554;
     --chat-res-bgn-color : #50c6ee;
     --chat-req-bgn-color : #f6737f;
+    --separador : #8442b1;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -20,6 +21,16 @@
     --btn-text-color: #34363f;
     --pan-bgn-color : #5f70b1;
     }
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: var(--bgn-color);
+    padding: 0px;
+    margin: 0px;
 }
   
 
@@ -95,6 +106,8 @@ a{
 /* MENU HORIZONTAL */
 .menu{
     display: flex;
+    justify-content: space-around;
+    background-color: var(--bgn-color);
 }
 
 .menu ul{
@@ -105,6 +118,12 @@ a{
     padding:0px;
 }
 
+.hor{
+    border: 0px 0px 1px 0px;
+    box-shadow: 0px 1px 7px  #171a2f;
+    
+}
+
 .hor ul{
     justify-content: center;
 }
@@ -112,6 +131,19 @@ a{
 .hor li{
     padding: 10px;
     margin: auto;
+}
+
+.hor #logo{
+
+    margin-right: 200px;
+    font-weight: bold;
+    border: 3px solid #443286;
+    letter-spacing: 3px;
+
+}
+
+.hor .item{
+    margin: 20px;
 }
 
 /* MENU VERTICAL */
@@ -298,4 +330,63 @@ a{
 
 .mensaje button:hover{
     background-color:  #2e3661;
+}
+
+/* Practica parte 2*/
+
+header {
+    position: sticky;
+}
+
+/*FOOTER*/
+
+footer hr{
+    border: 1px solid var(--separador);
+    width: 95%;
+}
+
+footer .content{
+    display: flex;
+    justify-content: center;
+}
+
+footer ul{
+    padding: 0px 5%;
+}
+
+footer .subtitle{
+    text-transform: uppercase;
+    color: var(--btn-border-color);
+}
+footer li{
+    padding: 3px;
+    letter-spacing: 2px;
+}
+
+/*FRONT*/
+
+.index_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+}
+
+.index_content *{
+    box-sizing: border-box;
+}
+
+.index_content img{
+    width: 50%;
+    border-radius: 5px;
+    filter: saturate(1.5);
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    position: relative;
+}
+
+.index_content p{
+    width: 500px;
+    color: var(--text-color);
+    font-size: 1.5em;
+    letter-spacing: 1px;
 }
