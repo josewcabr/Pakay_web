@@ -13,13 +13,14 @@
     --color-h2 : #443286;
     --mas-prod-bck : #232949;
     --tarj-prod-bck : #2c335c;
+    --btn-expansor :  #8442b1;
     font-family: 'Quicksand', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-    --bgn-color : #6b7bd3;
-    --text-color:#232425;
+    --bgn-color : #181b2e;
+    --text-color : #b6bcdc;
     --btn-bgn-color:  #6d7ddb;
     --btn-border-color : #313157;
     --btn-text-color: #34363f;
@@ -441,7 +442,7 @@ footer li{
     }
 
     svg{
-        fill: #8442b1;
+        fill: var(--btn-expansor);
     }
 
     .ver li{
