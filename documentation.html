@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <title>Pakay</title>
+    <title>Pakay | Documentación</title>
 </head>
 <body>
     <header>
@@ -16,8 +16,8 @@
                 <li class="logo"><a href="index.html">PAKAY</a></li>
             </ul>
             <ul>
-                <li class="item"><a href="#">Inicio</a></li>
-                <li class="item"><a href="documentation.html">Documentación</a></li>
+                <li class="item"><a href="index.html">Inicio</a></li>
+                <li class="item"><a href="#">Documentación</a></li>
                 <li class="item"><a href="product.html">Productos</a></li>
                 <li class="item"><a href="prices.html">Precios</a></li>
             </ul>
@@ -43,8 +43,8 @@
         </nav>
         <nav id="menu_desp" class="desplegable">
             <ul>
-                <li class="item"><a href="#">Inicio</a></li>
-                <li class="item"><a href="documentation.html">Documentación</a></li>
+                <li class="item"><a href="index.html">Inicio</a></li>
+                <li class="item"><a href="#">Documentación</a></li>
                 <li class="item"><a href="product.html">Productos</a></li>
                 <li class="item"><a href="prices.html">Precios</a></li>
             </ul>
@@ -60,16 +60,48 @@
         </nav>
     </header>
 
-    <div class="index_content">
-        <p>
-            Los desarrolladores, equipos y empresas de todos los tamaños usan Pakay para 
-            implementar, administrar y escalar aplicaciones.
-            Ya sea que esté construyendo un prototipo simple o un producto crítico para el 
-            negocio, la plataforma completamente administrada de Pakay le brinda el camino 
-            más simple para entregar aplicaciones rápidamente. Obtenga más información sobre 
-            cómo Pakay puede beneficiar el desarrollo de su aplicación.
-        </p>
-        <img src="https://i.picsum.photos/id/249/3000/2000.jpg?hmac=U2oOCXdXUwt6ftKMC4icF6eS8dGDUZJM_0-qi0JEqjk" alt="imagen tecnológica">
+    <div class="doc_content">
+        <h1>Documentación</h1>
+        <div class="panel_menu_izq">
+            <!-- No se como añadir un separador  -->
+            <ul>
+                <li><a href="#">Introducción</a><hr></li>
+                
+                <li><a href="#">Instalación</a><hr></li>
+                
+                <li><a href="#">Preparando la app</a><hr></li>
+                
+                <li><a href="#">Desplegando la app</a><hr></li>
+                
+                <li><a href="#">Configurar logs</a><hr></li>
+                
+                <li><a href="#">Escalando la app</a><hr></li>
+                
+                <li><a href="#">App en local</a><hr></li>
+                
+                <li><a href="#">Usar la base de datos</a><hr></li>
+            </ul>
+            <aside>
+                <h2>Introducción</h2>
+                <p>
+                    Este tutorial le permitirá implementar una aplicación Java en minutos.<br>
+                    En este tutorial asumimos que ya tiene:
+                </p>
+                <ul>
+                    <li>Cuenta en Pakay</li>
+                    <li>Java 8 instalado</li>
+                    <li>Maven instalado</li>
+                </ul>
+                <h2>Código</h2>
+                <p>
+                    Esto declara un único tipo de proceso, web y el comando necesario para ejecutarlo. 
+                    El nombre web es importante aquí. Declara que este tipo de proceso se adjuntará a 
+                    la pila de enrutamiento HTTP de Pakay y podrá recibir tráfico web. Los archivos de 
+                    proceso pueden contener tipos de procesos adicionales. Por ejemplo, puede declarar 
+                    uno para un trabajador en segundo plano que procesa elementos de una cola.
+                </p>
+            </aside>
+        </div>
     </div>
 
     <footer>
